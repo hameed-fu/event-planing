@@ -43,7 +43,7 @@
         }
 
         [class*=sidebar-dark-] {
-            background: linear-gradient(to right, #5a08e9, #a410be);
+            background: #5a08e9
         }
 
       

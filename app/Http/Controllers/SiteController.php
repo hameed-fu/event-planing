@@ -15,6 +15,15 @@ class SiteController extends Controller
         return view('site.index');
     }
 
+    public function about(){
+        return view('site.about');
+    }
+
+    public function contact(){
+        return view('site.contact');
+    }
+
+
     public function events(){
         $events = Event::get();
         return view('site.events', compact('events'));

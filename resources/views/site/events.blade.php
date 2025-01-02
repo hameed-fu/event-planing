@@ -93,13 +93,9 @@
               <div class="event-content">
                 <h4 class="event-title">{{ $event->name }}</h4>
                 <h3 class="event-price">{{ $event->price }}<span></span></h3>
-                <ul class="event-features">
-                  <li><i class="fas fa-check"></i> Photography</li>
-                  <li><i class="fas fa-check"></i> Consultation</li>
-                  <li><i class="fas fa-check"></i> Full Assistance</li>
-                  <li><i class="fas fa-times"></i> Vendor Referrals</li>
-                  <li><i class="fas fa-times"></i> Find Place</li>
-                </ul>
+                <div style="width: 300px">
+                  {!! $event->description !!}
+                </div>
                 <a href="{{ route('site.event.detail', $event->id) }}"><button class="btn">Book Now</button></a>
               </div>
             </div>

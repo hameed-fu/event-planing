@@ -74,6 +74,16 @@
                 </li>
                
 
+                <li class="nav-item has-treeview">
+                    <a href="{{ route('admin.contacts') }}"
+                        class="nav-link {{ request()->routeIs(['admin.contacts']) ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-user-graduate"></i>
+                        <p>
+                            Contacts
+                        </p>
+                    </a>
+                </li>
+
                 <li class="nav-item ">
                     <a href="{{ route('profile.edit') }}" class="nav-link">
                         <i class="nav-icon fa fa-user"></i>
